@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+
+    <script type="text/javascript" src="vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="./Public/css/style.css">
+
+
+</head>
+<body>
+
+<div id="app">
+
+    <ul>
+        <li v-for="(ingredient, i) in ingredients">{{ ingredient }} ({{ i }})</li>
+    </ul>
+
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            ingredients: ['meat', 'eggs', 'carrots']
+        }
+    });
+
+</script>
+
+</body>
+</html>
